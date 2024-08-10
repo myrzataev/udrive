@@ -51,7 +51,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     if (value == null || value.isEmpty) {
                       return "Can not be empty";
                     } else if ((value.contains("@gmail.com") == false)) {
-                      return "Incorrect email";
+                      return "email shoul contain @gmail.com";
                     }
                     return null;
                   },
