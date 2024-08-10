@@ -22,7 +22,7 @@ class DataBaseService {
     final dataBasePath = join(dataBaseDirPath, "user_db.db");
     final dataBase = await openDatabase(
       dataBasePath,
-      version: 1, // Specify the version here
+      version: 1, 
       onCreate: (db, version) async {
         await db.execute('''CREATE TABLE $_userTable(
           $_usersIdColumName INTEGER PRIMARY KEY,
